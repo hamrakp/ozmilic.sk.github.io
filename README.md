@@ -1,1 +1,0 @@
-# ozmilic.sk
