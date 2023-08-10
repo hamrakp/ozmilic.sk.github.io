@@ -13,8 +13,33 @@
         <link rel="stylesheet" href="css/templatemo-style.css">
         <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <style>
+            .portfolio-item img {
+                opacity: 0;
+                transition: opacity 1.5s ease-in-out;
+            }
+            
+            .portfolio-item.fade-in img {
+                opacity: 1;
+            }
+        </style>          
     </head>
 <body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const portfolioItems = document.querySelectorAll('.portfolio-item img');
+    
+            function applyFadeInEffect() {
+                portfolioItems.forEach((img) => {
+                    img.style.opacity = 1;
+                });
+            }
+    
+            // Apply fade-in effect when the page is loaded
+            applyFadeInEffect();
+        });
+    </script> 
+      
     <nav>
         <div class="logo">
             <a href="index.html">OZ <em>Milič</em></a>
