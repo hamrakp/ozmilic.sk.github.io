@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  		<title>OZ MILIČ</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <style>
-            .portfolio-item img {
-                opacity: 0;
-                transition: opacity 1.5s ease-in-out;
-            }
-            
-            .portfolio-item.fade-in img {
-                opacity: 1;
-            }
-        </style>          
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>OZ MILIČ</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="description" content="safe water for god sake">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <style>
+        .portfolio-item img {
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        .portfolio-item.fade-in img {
+            opacity: 1;
+        }
+        
+        #video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #video-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
 <body>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -34,8 +47,7 @@
                     img.style.opacity = 1;
                 });
             }
-    
-            // Apply fade-in effect when the page is loaded
+
             applyFadeInEffect();
         });
     </script> 
@@ -59,9 +71,7 @@
                 </div>    
             </div>
         </div>
-        <video autoplay loop muted>
-        	<source src="vid/main-loop.mp4" type="video/mp4" />
-        </video>
+        <img src="img/gif/loop.gif" alt="water">
     </div>
     <div class="full-screen-portfolio" id="portfolio">
         <div class="container-fluid">
@@ -103,26 +113,23 @@
     </footer>
     <section class="overlay-menu">
       <div class="container">
-        <div class="row">
-          <div class="main-menu">
-              <ul>
-                  <li>
+        <div class="main-menu">
+            <ul>
+                <li>
                     <a href="index.html">Domov</a>
-                  </li>
-                  <li>
+                </li>
+                <li>
                     <a href="work.html">Naša práca</a>
-                  </li>
-                  <li>
+                </li>
+                <li>
                     <a href="help.html">Podporte nás</a>
-                  </li>
-                  <li>
+                </li>
+                <li>
                     <a href="mailto:infoozmilic@gmail.com">Kontaktujte nás</a>
-                  </li>
-              </ul>
-              <p>Občianské združenie Milič | 2023</p>
-          </div>
-        </div>
-      </div>
+                </li>
+            </ul>
+            <p>Občianské združenie Milič | 2023</p>
+        </div>      </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>OZ MILIČ</title>
-    <meta name="description" content="">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="description" content="safe water for god sake">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -22,6 +23,18 @@
         .fade-in.fade-visible {
             opacity: 1;
         }
+
+        .gif-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        
     </style>
 </head>
 <body>
@@ -34,19 +47,17 @@
       </div>
     </nav>
     <div id="video-container-sub">
-        <div class="video-overlay"></div>
-        <div class="video-content">
+    <div class="video-overlay"></div>
+    <div class="video-content">
             <div class="inner">
                 <h1>Naša práca
-                <div class="scroll-icon">
-                    <a class="scrollTo" data-scrollTo="entries" href="#"><img src="img/scroll-icon.png" alt=""></a>
-                </div>    
-                <br><em>Čistejšia voda pre lepšie zdravie</em></h1>
+                    <div class="scroll-icon">
+                        <a class="scrollTo" data-scrollTo="entries" href="#"><img src="img/scroll-icon.png" alt=""></a>
+                    </div>    
+                    <br><em>Čistejšia voda pre lepšie zdravie</em></h1>
             </div>
         </div>
-        <video autoplay loop muted>
-        	<source src="vid/loop.mp4" type="video/mp4" />
-        </video>
+        <div class="gif-background" style="background-image: url('img/gif/loop.gif');"></div>
     </div>
     <div id="entries">
         <div class="more-about-us fade-in">
@@ -116,7 +127,6 @@
                 });
             }
 
-            // Apply fade-in effect when the page is loaded
             applyFadeInEffect();
         });
     </script>
